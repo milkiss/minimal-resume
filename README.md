@@ -4,7 +4,7 @@ A dependency-light LaTeX resume template
 
 ## Preview
 
-![PDF preview]((https://raw.githubusercontent.com/milkiss/minimal-resume/master/resume.pdf))
+![PDF preview](https://raw.githubusercontent.com/milkiss/minimal-resume/master/resume.pdf)
 
 ## Installation
 
