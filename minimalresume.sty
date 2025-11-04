@@ -1,0 +1,88 @@
+\ProvidesPackage{minimalresume}[2025/11/02 Minimal resume macros]
+
+% ----------------------------
+% Core packages
+% ----------------------------
+\RequirePackage[margin=1.5cm, top=1cm, bottom=1.5cm]{geometry}
+\RequirePackage{hyperref}
+
+% No page number
+\pagestyle{empty}
+
+% ----------------------------
+% Hyperref setup (grayscale, no boxes)
+% ----------------------------
+\hypersetup{
+    colorlinks=false,
+    pdfborder={0 0 0},
+    pdfauthor={Sangwoo Kim},
+}
+
+% ----------------------------
+% Basic spacing
+% ----------------------------
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+% ----------------------------
+% Header
+% ----------------------------
+\newcommand{\ResumeName}[1]{%
+    \begin{center}
+        {\Huge \bfseries #1}\\[3pt]
+    \end{center}
+}
+
+\newcommand{\ContactInfo}[2]{%
+    \begin{center}
+        {\small #1 ~|~ \href{mailto:#2}{#2}}
+    \end{center}
+}
+
+% ----------------------------
+% Section and Entry formatting
+% ----------------------------
+\newcommand{\ResumeSection}[1]{%
+    {\large\bfseries \MakeUppercase{#1}}\par
+    \vspace{5pt}\hrule height 0.4pt\vspace{10pt}
+}
+
+\newcommand{\ResumeEntry}[3]{%
+    \noindent{\textbf{#1}} \hfill {\small#2}\par
+    \vspace{2pt}
+    #3\vspace{5pt}
+}
+
+% ----------------------------
+% Simple list environment
+% ----------------------------
+\newenvironment{EntryList}{%
+    \vspace{-8pt}%
+    \begin{itemize}
+        \setlength{\itemsep}{0pt}
+        \setlength{\parskip}{0pt}
+        \setlength{\parsep}{0pt}
+        \setlength{\topsep}{0pt}
+        \setlength{\partopsep}{0pt}
+    }{\end{itemize}\vspace{1pt}}
+
+% ----------------------------
+% Role entries (for promotions / multiple roles)
+% ----------------------------
+\newcommand{\RoleEntry}[3]{
+    #1 \hfill {\small #2}\par
+    \begin{EntryList}
+        #3
+    \end{EntryList}
+    \vspace{1pt}
+}
+
+\newcommand{\EducationEntry}[3]{%
+    #1 \hfill {\small #2}\par
+    \vspace{5pt}
+}
+
+\newcommand{\AwardsEntry}[3]{%
+    \textbf{#1}, #2 \hfill {\small #3}\par
+    \vspace{5pt}
+}

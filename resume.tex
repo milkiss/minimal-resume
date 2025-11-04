@@ -1,0 +1,70 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{minimalresume}
+\usepackage{lmodern}
+
+\begin{document}
+
+\ResumeName{Sangwoo Kim}
+\ContactInfo{+82 10 9772 7213}{sangwoo.kim.1003@gmail.com}
+
+
+\ResumeSection{Education}
+\ResumeEntry{Seoul National University}{Seoul, Korea}{
+    \EducationEntry{B.S. in Computer Science and Engineering}{Dec 2023 -- Present}{}
+}
+
+\ResumeSection{Experience}
+\ResumeEntry{Saccade Capital}{Seoul, Korea}{%
+    \RoleEntry{Quantitative Analyst}{Dec 2023 -- Present}{%
+        \item Develop and manage daily market-neutral long–short statistical arbitrage strategies in U.S. and Japan markets.
+    }
+}
+
+\ResumeEntry{Schperics}{Seoul, Korea}{%
+    \RoleEntry{Quantitative Researcher}{Oct 2021 -- Nov 2023}{%
+        \item Developed a high-performance strategy simulator using Rust.
+        \item Built research and trading infrastructure on AWS with Terraform.
+        \item Designed a matrix-style data format that efficiently appends daily data for live trading.
+    }
+}
+
+\ResumeEntry{KIDB Money Brokerage Co.}{Seoul, Korea}{%
+    \RoleEntry{Project Manager}{Oct 2020 -- Oct 2021}{%
+        \item Led design and development of a bond trading platform, including application architecture and business logic.
+        \item Built AWS infrastructure using ECS, Lambda, and S3 with Terraform, ensuring financial regulatory compliance.
+        \item Developed bond database management API in Python and front-end interfaces with Next.js and React.
+        \item Filed three patents related to platform architecture and advanced order functionalities.
+    }
+}
+
+\ResumeEntry{WorldQuant}{Seoul, Korea}{%
+    \RoleEntry{Vice President, Research}{Jul 2020 -- Aug 2020}{%
+        \item Led development of an in-house U.S. fundamental dataset that directly parses SEC filings, improving accuracy and retrieval speed.
+        \item Standardized financial statement items across companies for consistent cross-firm analysis.
+    }
+    \RoleEntry{Senior Quantitative Researcher}{Jan 2018 -- Jul 2020}{%
+        \item Worked closely with senior portfolio managers on a high-capacity, low-impact strategy, delivering alphas adopted for live trading.
+        \item Developed and optimized a mean-variance based portfolio optimization algorithm in collaboration with a portfolio manager, published to the firm’s internal strategy marketplace.
+        \item Advised global researchers on signal compositions and meta-strategy construction.
+    }
+    \RoleEntry{Quantitative Researcher}{Oct 2016 -- Jan 2018}{%
+        \item Developed statistical arbitrage strategies across global markets, generating diversified alphas from a wide range of datasets, including fundamentals, analyst estimates, news, and social media.
+        \item Designed filtering algorithms to select high-quality company alphas and combined them into meta-strategies.
+    }
+    \RoleEntry{Quantitative Developer}{Dec 2015 -- Oct 2016}{%
+        \item Improved storage efficiency of in-house fundamental datasets by introducing intermediate data compression.
+        \item Implemented monitoring system for daily data generation, identifying and resolving a critical data processing bug that caused missing values.
+    }
+}
+
+\ResumeEntry{R.O.K. Cyber Command}{Seoul, Korea}{%
+    \RoleEntry{Software Engineer}{Mar 2014 -- Dec 2015}{%
+        \item Developed a real-time inter-unit chat service using Vert.x, Java, Scala, and AngularJS.
+    }
+}
+
+\ResumeSection{Awards \& Honors}
+\AwardsEntry{42nd Place}{The 35th Annual ACM-ICPC World Finals}{May 2011}{}
+\AwardsEntry{Gold Medal}{The 10th Korean Collegiate Programming Contest}{Oct 2010}{}
+
+\end{document}
