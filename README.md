@@ -2,6 +2,10 @@
 
 A dependency-light LaTeX resume template
 
+## Preview
+
+![PDF preview]((https://raw.githubusercontent.com/milkiss/minimal-resume/master/resume.pdf))
+
 ## Installation
 
 For macOS users, the simplest setup is with **BasicTeX**:
